@@ -1,6 +1,5 @@
 <template>
   <div :class="['movie', { 'movie__horizontal-list': isHorizontalList }]">
-    <!-- <AppNavigation /> -->
     <NuxtLink
       :to="`/${movie.kinopoiskId}`"
       :class="[

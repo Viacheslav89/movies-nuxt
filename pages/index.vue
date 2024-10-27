@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-const { moviesList, fetchMovies } = useMovies();
+const { fetchMovies } = useMovies();
 fetchMovies();
 
 definePageMeta({
@@ -23,11 +23,11 @@ definePageMeta({
 const { getMoviesList } = useMovies();
 </script>
 
+
 <style lang="scss" scoped>
 .catalog {
   background-color: rgb(26, 25, 25);
   min-height: 2000px;
-  // padding-top: 15px;
 }
 
 .catalog__wrapper {
