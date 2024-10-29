@@ -13,7 +13,7 @@ const { searchMovieName } = useMovies();
 
 watch(
   () => searchMovieInput.value,
-  (newData, oldData) => {
+  (newData: string, oldData: string) => {
     if (newData !== oldData) {
         setSearchMovieName();
     }

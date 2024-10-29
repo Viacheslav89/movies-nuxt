@@ -33,11 +33,12 @@
 </template>
 
 <script setup lang="ts">
+import type { Movie } from '~/type';
 const { id } = useRoute().params;
 const { moviesList } = useMovies();
 
 const movie = moviesList.value.find(
-  (movie) => movie.kinopoiskId.toString() === id
+  (movie: Movie) => movie.kinopoiskId.toString() === id
 );
 
 if (!movie?.kinopoiskId) {

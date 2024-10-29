@@ -1,5 +1,5 @@
 <template>
-  <div class="catalog">
+  <!-- <div class="catalog">
     <AppPagination />
     <div
       class="catalog__wrapper"
@@ -8,20 +8,22 @@
         <AppMovieCard :movie="movie" />
       </div>
     </div>
-  </div>
-
+  </div> -->
+<div>test</div>
 </template>
 
-<script setup lang="ts">
-const { fetchMovies } = useMovies();
-fetchMovies();
+<!-- <script setup lang="ts">
+// const { fetchMovies } = useMovies();
+// fetchMovies();
 
-definePageMeta({
-  layouts: "/",
-});
+// definePageMeta({
+//   layouts: "/",
+// });
+
+
 
 const { getMoviesList } = useMovies();
-</script>
+</script> -->
 
 
 <style lang="scss" scoped>

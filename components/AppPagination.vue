@@ -25,7 +25,7 @@ const changePageNamber = (currentPage: number) => {
 
 watch(
   () => page.value,
-  (newData, oldData) => {
+  (newData: number, oldData: number) => {
     if (newData !== oldData) {
       fetchMovies();
     }

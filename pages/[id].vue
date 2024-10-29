@@ -5,6 +5,9 @@
   </template>
   
   <script setup lang="ts">
+import AppMovieDetails from '~/components/AppMovieDetails.vue';
+
+  
   definePageMeta({
     layouts: "/",
   });

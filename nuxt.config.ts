@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-  modules: ['@nuxthub/core']
-})
+  modules: ["@nuxthub/core"],
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
+    },
+    "preset": "cloudflare_pages",
+  },
+  ssr: false,
+});
